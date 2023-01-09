@@ -1,0 +1,15 @@
+PROCEDURE insertion_sort(parameters)
+VAR
+    tab : ARRAY_OF INTEGER[];
+    aux:INTEGER
+BEGIN
+    FOR i FROM 1 TO tab.length - 1 STEP 1  DO
+        j = i
+    WHILE (j > 0 and tab[j-1] > tab[j]) DO
+        aux=tab[j]
+        tab[j]=tab[j-1]
+        tab[j-1]=aux
+        j=j-1
+    END_WHILE
+    END_FOR
+END
